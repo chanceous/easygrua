@@ -13,7 +13,9 @@ class DriverServiceProvider extends ServiceProvider
      *
      * @var array
      */
-    protected $drivers = [];
+    protected $drivers = [
+        \BotMan\Drivers\Telegram\TelegramDriver::class
+    ];
 
     /**
      * @return void
